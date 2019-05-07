@@ -12,6 +12,8 @@
 // STL includes
 #include <vector>
 
+#include <iostream>
+#include <string>
 
 
 MainWindow::MainWindow(QWidget *parent) :
