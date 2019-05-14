@@ -109,8 +109,8 @@ void MainWindow::capImages()
             this->ui->error_label->setText(QString("Only ")+QString::number(i) + QString(" cameras were found, 4 are required for calibration"));
             return;
         } else {
-            cap.set(CV_CAP_PROP_FRAME_WIDTH, 2048);
-            cap.set(CV_CAP_PROP_FRAME_HEIGHT, 1536);
+            cap.set(CV_CAP_PROP_FRAME_WIDTH, 1024);
+            cap.set(CV_CAP_PROP_FRAME_HEIGHT, 768);
             Mat frame;
             cap >> frame;
             imgs.push_back(frame);
